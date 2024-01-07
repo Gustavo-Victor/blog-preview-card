@@ -1,13 +1,130 @@
+/*css variables*/
 :root {
     --primary-yellow: hsl(47, 88%, 63%);
+    --myrtle-green: #357266;
+    --midnight-green: #0E3B43;
+    --cafe-noir: #312509;
     --black: hsl(0, 0%, 7%);
     --gray: hsl(0, 0%, 50%);
     --white: hsl(0, 0%, 100%);
+    --body-font: "Figtree", sans-serif;
 }
 
+/*reset*/
 * {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--primary-yellow);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.2rem;
+    font-family: var(--body-font);
+    font-weight: 600;
+}
+
+body a {
+    text-decoration: none;
+}
+
+
+/*card*/
+.card {
+    background-color: var(--white);
+    width: 90%;
+    max-width: 360px;
+    padding: 1.7rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--black);
+    box-shadow: 8px 8px 0px 0px var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--black);
+}
+
+/*card image*/
+.card .card-image {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/*card content*/
+.card .card-content .card-category {
+    display: inline-block;
+    background-color: var(--primary-yellow);
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 13px;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.card .card-content .card-date {
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+}
+
+.card .card-content .card-title {
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+
+.card .card-content .card-description {
+    color: var(--gray);
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 23px;
+}
+
+/*card user info*/
+.card .card-user {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.card .card-user .card-user-photo {
+    width: 40px;
+}
+
+.card .card-user .card-user-name {
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+
+/*attribution*/
+.attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.attribution a {
+    font-weight: 800;
+    color: var(--midnight-green);
+}
+
+.attribution a:hover,
+.attribution a:active {
+    color: var(--myrtle-green);
+}
+
+.attribution a:visited {
+    color: var(--cafe-noir);
+}
