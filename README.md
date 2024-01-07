@@ -17,7 +17,8 @@
 
 ## ❓ Sobre
 
-Este faz parte de uma desafio da plataforma FrontEnd Mentor. O projeto é basicamente um card simples feito em HTML5 e CSS3. Aqui está o [link](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) para a página do desafio. 
+Este projeto faz parte de uma desafio da plataforma FrontEnd Mentor. 
+Consiste basicamente um card simples feito em HTML5 e CSS3. Aqui está o [link](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) para a página do desafio. 
 
 
 ## 🎨 Layout
